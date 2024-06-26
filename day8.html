@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form{
+        background-color: rgb(229, 249, 231);
+        width:500px;
+      }
+      body{
+        color:aliceblue;
+       
+
+      }
+     
+      fieldset{
+        background-color: rgb(231, 238, 231);
+        width: 550px;
+      }
+      *{
+        color:black
+      }
+    </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend><b>REGISTRATION FORM</b></legend>
+      <br />
+      <form method="post">
+        <ion-icon name="receipt-outline"></ion-icon>
+        <label  for="fname">First Name:</label>
+        <input id="crr"
+          id="fname"
+          type="text"
+          name="first name"
+          placeholder="enter"
+          required
+          autofocus
+        /><br /><br />
+        <ion-icon name="receipt-outline"></ion-icon>
+        <label for="sname">Second Name:</label>
+        <input
+          id="sname"
+          type="text"
+          name="second name"
+          placeholder="enter"
+          required
+        /><br /><br />
+        <ion-icon name="accessibility-outline"></ion-icon><label>Gender:</label>
+        <input name="gender" type="radio" id="gender" value="male_gen" /><label
+          for="male_gen"
+          >Male</label
+        >
+        <input
+          name="gender"
+          type="radio"
+          id="gender"
+          value="female_gen"
+        /><label for="female_gen">Female</label>
+        <input
+          name="gender"
+          type="radio"
+          id="gender"
+          value="others_gen"
+        /><label for="others_gen">Others</label><br /><br />
+        <ion-icon name="call-outline"></ion-icon><label for="phone">Mobile:</label>
+        <input
+          id="phone"
+          type="tele"
+          name="phone"
+          placeholder="1234-123-1234"
+          pattern="[0-9]{10}"
+          required
+        /><br /><br />
+        <ion-icon name="mail-outline"></ion-icon>
+        <label for="mail">Email:</label>
+        <input
+          id="mail"
+          type="email"
+          name="email"
+          placeholder="xyz@gmail.com"
+          required
+        /><br /><br />
+        <ion-icon name="calendar-number-outline"></ion-icon>
+        <label for="date">Date of Birth:</label>
+        <input type="date" /><br /><br />
+        <ion-icon name="business-outline"></ion-icon>Address:<textarea rows="3" cloumn="5">enter</textarea><br /><br />
+        <ion-icon name="key-outline"></ion-icon>
+        <label for="pswd">Password:</label>
+        <input
+          id="pswd"
+          type="password"
+          name="pswd"
+          placeholder="pswd"
+          required
+        /><br /><br />
+        <ion-icon name="bulb-outline"></ion-icon><label>Skills:</label>
+        <input name="lang" type="checkbox" id="lang" value="lang1" /><label
+          for="lang1"
+          >Python</label
+        >
+        <input
+          name="lang"
+          type="checkbox"
+          id="lang"
+          value="lang2"
+        /><label for="lang2">Java</label>
+        <input
+          name="lang"
+          type="checkbox"
+          id="lang"
+          value="lang3"
+         /><label for="lang3">Javascript</label><br /><br />
+         <input name="agree" type="checkbox" id="agree" value="agree"/><label>I agree the terms and conditions mentioned above <br><br>
+         <input type="reset" />
+        <input type="submit" value="Register" />
+      </form>
+    </fieldset>
+  </body>
+</html>

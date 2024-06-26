@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page Title</title>
+    <link rel="icon" type="image" href="island.jpg">
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <h3 textalign="middle">LOGIN PAGE</h3>
+     <style>
+      form{
+        background-color: rgb(201, 221, 202);
+        width:300px;
+      }
+      body{
+        color:aliceblue;
+       
+
+      }
+      #crr{
+        background-color: rgb(241, 217, 217);
+        color: white;
+      }
+      fieldset{
+        background-color: rgb(231, 238, 231);
+        width: 350px;
+      }
+      *{
+        color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <form>
+        <img src="island.jpg" height="100" width="100" />
+        <br />
+        <ion-icon name="mail-outline"></ion-icon>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="mail"
+          placeholder="ex:xyz@gmail.com"
+        />
+        <br /><br /><ion-icon name="key-outline"></ion-icon>
+        <label for="pswd">Password:</label>
+        <input
+          type="password"
+          id="pswd"
+          name="pswd"
+          placeholder="1234-123-123"
+        /><br /><br />
+        <input
+          type="submit"
+          value="login"
+          formaction="./day8.html"
+        /><br /><br />
+        <input
+          type="submit"
+          value="Forgot Password"
+          formaction="./forgot.html"
+        /><br /><br />
+        <label for="signup">Not a member?</label>
+        <input type="submit" value="signup" formaction="./signup.html" />
+      </form>
+    </fieldset>
+  </body>
+</html>
